@@ -1,0 +1,6 @@
+<£¿php
+require('db.php');
+query = "SELECT manager.fname as manager_fname, manager.lname as manager_lname, staff.fname as staff_fname, staff.lname as staff_lname, department.department_name";
+query . = "FROM manager";
+query . = "INNER JOIN manager_staff ON manager.id=manager_staff.manager_id INNER JOIN staff ON manager_staff.staff_id=staff.id INNER JOIN department ON staff.department_id=department.department_id";
+?>

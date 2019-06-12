@@ -1,0 +1,6 @@
+<? php
+require('db.php');
+query = "SELECT staff.fname, staff.lname, schedule.work_time, schedule.work_date, schedule.location;
+query . = "from schedule";
+query . = "INNER JOIN staff on schedule.staff_id=staff.id where schedule.work_date='Thursday' AND location='HotPot'";
+£¿>
